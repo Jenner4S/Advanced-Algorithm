@@ -1,6 +1,4 @@
-package com.darwindev.algo;
-
-import com.darwindev.RandomData;
+package com.darwindev;
 
 /**
  * Algorithmic - Binary search

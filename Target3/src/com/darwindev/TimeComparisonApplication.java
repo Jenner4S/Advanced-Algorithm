@@ -1,8 +1,11 @@
-package com.darwindev.apps;
+package com.darwindev;
 
+import com.darwindev.Algo;
+import com.darwindev.AlgoFactory;
+import com.darwindev.AlgoName;
 import com.darwindev.RandomData;
-import com.darwindev.algo.*;
-import static com.darwindev.algo.AlgoName.*;
+
+import static com.darwindev.AlgoName.*;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;

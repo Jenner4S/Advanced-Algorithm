@@ -1,4 +1,4 @@
-package com.darwindev.apps;
+package com.darwindev;
 
 /**
  * Application Types

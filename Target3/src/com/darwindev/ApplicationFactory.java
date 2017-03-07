@@ -1,7 +1,5 @@
-package com.darwindev.apps;
+package com.darwindev;
 
-import com.darwindev.algo.AlgoName;
-import static com.darwindev.apps.ApplicationType.*;
 import org.jfree.ui.ApplicationFrame;
 
 /**

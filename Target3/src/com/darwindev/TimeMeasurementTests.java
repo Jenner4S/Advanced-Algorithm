@@ -1,10 +1,8 @@
 package com.darwindev;
 
-import com.darwindev.algo.*;
-import static com.darwindev.apps.ApplicationType.*;
-import static com.darwindev.algo.AlgoName.*;
-import com.darwindev.apps.ApplicationFactory;
-import com.darwindev.apps.ApplicationType;
+import static com.darwindev.ApplicationType.*;
+import static com.darwindev.AlgoName.*;
+
 import org.jfree.ui.ApplicationFrame;
 import org.jfree.ui.RefineryUtilities;
 

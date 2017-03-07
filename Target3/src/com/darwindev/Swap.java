@@ -1,4 +1,4 @@
-package com.darwindev.algo;
+package com.darwindev;
 
 /**
  * Algorithm - Swap the value of two variables.

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.darwindev</OriginalElement>
+  <nodes>
+    <node x="668.0" y="787.0">com.darwindev.TimeMeasurementTests</node>
+    <node x="0.0" y="1021.0">com.darwindev.TimeComparisonApplication</node>
+    <node x="386.0" y="0.0">com.darwindev.Algo</node>
+    <node x="1254.5" y="446.0">com.darwindev.BubbleSort</node>
+    <node x="502.5" y="446.0">com.darwindev.SelectionSort</node>
+    <node x="1141.5" y="245.0">com.darwindev.AlgoSort</node>
+    <node x="822.5" y="424.0">com.darwindev.MergeSort</node>
+    <node x="273.0" y="1310.0">com.darwindev.Swap</node>
+    <node x="0.0" y="179.0">com.darwindev.BinarySearch</node>
+    <node x="0.0" y="1310.0">com.darwindev.RandomData</node>
+    <node x="1560.5" y="424.0">com.darwindev.QuickSort</node>
+    <node x="1057.0" y="787.0">com.darwindev.ApplicationType</node>
+    <node x="696.1818181818182" y="690.0">com.darwindev.AlgoFactory</node>
+    <node x="61.53125" y="1213.0">com.darwindev.ApplicationFactory</node>
+    <node x="346.0" y="168.0">com.darwindev.FindMinimum</node>
+    <node x="94.25" y="787.0">com.darwindev.AlgoName</node>
+    <node x="329.0" y="1021.0">com.darwindev.TimeMeasurementApplication</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.darwindev.ApplicationFactory" target="com.darwindev.TimeMeasurementApplication">
+      <point x="121.25" y="-26.0" />
+      <point x="425.28125" y="1188.0" />
+      <point x="476.0" y="1188.0" />
+      <point x="0.0" y="71.0" />
+    </edge>
+    <edge source="com.darwindev.ApplicationFactory" target="com.darwindev.TimeComparisonApplication">
+      <point x="-121.25" y="-26.0" />
+      <point x="182.78125" y="1188.0" />
+      <point x="154.5" y="1188.0" />
+      <point x="0.0" y="71.0" />
+    </edge>
+    <edge source="com.darwindev.AlgoSort" target="com.darwindev.Algo">
+      <point x="0.0" y="-26.0" />
+      <point x="1213.0" y="143.0" />
+      <point x="562.6666666666666" y="143.0" />
+      <point x="70.66666666666663" y="59.0" />
+    </edge>
+    <edge source="com.darwindev.QuickSort" target="com.darwindev.AlgoSort">
+      <point x="0.0" y="-103.0" />
+      <point x="1749.0" y="394.0" />
+      <point x="1266.625" y="394.0" />
+      <point x="53.625" y="26.0" />
+    </edge>
+    <edge source="com.darwindev.AlgoFactory" target="com.darwindev.BinarySearch">
+      <point x="-101.25" y="-26.0" />
+      <point x="716.4318181818182" y="670.0" />
+      <point x="163.0" y="670.0" />
+      <point x="0.0" y="92.0" />
+    </edge>
+    <edge source="com.darwindev.FindMinimum" target="com.darwindev.Algo">
+      <point x="0.0" y="-103.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="com.darwindev.TimeMeasurementApplication" target="com.darwindev.AlgoName">
+      <point x="0.0" y="-71.0" />
+      <point x="476.0" y="996.0" />
+      <point x="323.4166666666667" y="996.0" />
+      <point x="91.66666666666669" y="92.0" />
+    </edge>
+    <edge source="com.darwindev.AlgoFactory" target="com.darwindev.BubbleSort">
+      <point x="60.75" y="-26.0" />
+      <point x="878.4318181818182" y="660.0" />
+      <point x="1397.5" y="660.0" />
+      <point x="0.0" y="81.0" />
+    </edge>
+    <edge source="com.darwindev.AlgoFactory" target="com.darwindev.QuickSort">
+      <point x="101.25" y="-26.0" />
+      <point x="918.9318181818182" y="670.0" />
+      <point x="1749.0" y="670.0" />
+      <point x="0.0" y="103.0" />
+    </edge>
+    <edge source="com.darwindev.MergeSort" target="com.darwindev.AlgoSort">
+      <point x="0.0" y="-103.0" />
+      <point x="1028.5" y="404.0" />
+      <point x="1195.125" y="404.0" />
+      <point x="-17.875" y="26.0" />
+    </edge>
+    <edge source="com.darwindev.BubbleSort" target="com.darwindev.AlgoSort">
+      <point x="0.0" y="-81.0" />
+      <point x="1397.5" y="404.0" />
+      <point x="1230.875" y="404.0" />
+      <point x="17.875" y="26.0" />
+    </edge>
+    <edge source="com.darwindev.AlgoFactory" target="com.darwindev.MergeSort">
+      <point x="20.25" y="-26.0" />
+      <point x="837.9318181818182" y="650.0" />
+      <point x="1028.5" y="650.0" />
+      <point x="0.0" y="103.0" />
+    </edge>
+    <edge source="com.darwindev.BinarySearch" target="com.darwindev.Algo">
+      <point x="0.0" y="-92.0" />
+      <point x="163.0" y="143.0" />
+      <point x="421.33333333333337" y="143.0" />
+      <point x="-70.66666666666663" y="59.0" />
+    </edge>
+    <edge source="com.darwindev.TimeComparisonApplication" target="com.darwindev.AlgoName">
+      <point x="-77.25" y="-71.0" />
+      <point x="77.25" y="996.0" />
+      <point x="140.08333333333331" y="996.0" />
+      <point x="-91.66666666666669" y="92.0" />
+    </edge>
+    <edge source="com.darwindev.SelectionSort" target="com.darwindev.AlgoSort">
+      <point x="1.1368683772161603E-13" y="-81.0" />
+      <point x="652.5000000000001" y="394.0" />
+      <point x="1159.375" y="394.0" />
+      <point x="-53.625" y="26.0" />
+    </edge>
+    <edge source="com.darwindev.AlgoFactory" target="com.darwindev.SelectionSort">
+      <point x="-20.25" y="-26.0" />
+      <point x="797.4318181818182" y="650.0" />
+      <point x="652.5" y="650.0" />
+      <point x="0.0" y="81.0" />
+    </edge>
+    <edge source="com.darwindev.AlgoFactory" target="com.darwindev.FindMinimum">
+      <point x="-60.75" y="-26.0" />
+      <point x="756.9318181818182" y="660.0" />
+      <point x="492.0" y="660.0" />
+      <point x="0.0" y="103.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.3632416787264834" x="969.0" y="681.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
