@@ -1,7 +1,5 @@
 package com.darwindev.mazegame;
 
-import com.darwindev.mazegame.elements.*;
-
 class EnchantedMazeGame extends MazeGame {
     public Room makeRoom(int n) {
         return new EnchantedRoom(n);

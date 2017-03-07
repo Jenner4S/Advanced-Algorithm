@@ -21,13 +21,142 @@
     <favorites_list name="Maze" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="MazeGameFactory.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/darwindev/mazegame/MazeGameFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-              <folding />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="JAVA/com.darwindev.mazegame" pinned="false" current-in-tab="true">
+        <entry file="uml://JAVA/com.darwindev.mazegame">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>com.darwindev.mazegame</OriginalElement>
+              <nodes>
+                <node x="833.75" y="409.0">com.darwindev.mazegame.EnchantedMazeGame</node>
+                <node x="222.0" y="223.0">com.darwindev.mazegame.DoorWithSpell</node>
+                <node x="709.75" y="555.0">com.darwindev.mazegame.MazeGameFactory</node>
+                <node x="212.75" y="22.5">com.darwindev.mazegame.Door</node>
+                <node x="1315.6607142857142" y="234.0">com.darwindev.mazegame.SecretPassageWall</node>
+                <node x="0.0" y="674.0">com.darwindev.mazegame.Side</node>
+                <node x="912.75" y="179.0">com.darwindev.mazegame.MazeGame</node>
+                <node x="630.7499999999999" y="0.0">com.darwindev.mazegame.Room</node>
+                <node x="1176.75" y="234.0">com.darwindev.mazegame.BombedWall</node>
+                <node x="0.0" y="223.0">com.darwindev.mazegame.IronDoor</node>
+                <node x="971.25" y="33.5">com.darwindev.mazegame.Maze</node>
+                <node x="486.62499999999994" y="409.0">com.darwindev.mazegame.BombedMazeGame</node>
+                <node x="708.75" y="223.0">com.darwindev.mazegame.EnchantedRoom</node>
+                <node x="1266.25" y="44.5">com.darwindev.mazegame.Wall</node>
+                <node x="476.99999999999994" y="223.0">com.darwindev.mazegame.RoomWithABomb</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="com.darwindev.mazegame.EnchantedMazeGame" target="com.darwindev.mazegame.DoorWithSpell">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.darwindev.mazegame.BombedMazeGame" target="com.darwindev.mazegame.IronDoor">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.darwindev.mazegame.BombedWall" target="com.darwindev.mazegame.Wall">
+                  <point x="0.0" y="-15.0" />
+                  <point x="1231.75" y="159.0" />
+                  <point x="1296.25" y="159.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="com.darwindev.mazegame.MazeGame" target="com.darwindev.mazegame.Door">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.darwindev.mazegame.EnchantedMazeGame" target="com.darwindev.mazegame.MazeGame">
+                  <point x="28.625" y="-48.0" />
+                  <point x="976.875" y="369.0" />
+                  <point x="1095.75" y="369.0" />
+                  <point x="61.0" y="70.0" />
+                </edge>
+                <edge source="com.darwindev.mazegame.IronDoor" target="com.darwindev.mazegame.Door">
+                  <point x="0.0" y="-26.0" />
+                  <point x="101.0" y="159.0" />
+                  <point x="232.25" y="159.0" />
+                  <point x="-39.0" y="37.0" />
+                </edge>
+                <edge source="com.darwindev.mazegame.MazeGame" target="com.darwindev.mazegame.Room">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.darwindev.mazegame.EnchantedRoom" target="com.darwindev.mazegame.Room">
+                  <point x="0.0" y="-26.0" />
+                  <point x="800.75" y="159.0" />
+                  <point x="711.7499999999999" y="159.0" />
+                  <point x="0.0" y="59.5" />
+                </edge>
+                <edge source="com.darwindev.mazegame.BombedMazeGame" target="com.darwindev.mazegame.BombedWall">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.darwindev.mazegame.RoomWithABomb" target="com.darwindev.mazegame.Room">
+                  <point x="0.0" y="-26.0" />
+                  <point x="572.5" y="159.0" />
+                  <point x="657.7499999999999" y="159.0" />
+                  <point x="-54.0" y="59.5" />
+                </edge>
+                <edge source="com.darwindev.mazegame.EnchantedMazeGame" target="com.darwindev.mazegame.EnchantedRoom">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.darwindev.mazegame.MazeGameFactory" target="com.darwindev.mazegame.BombedMazeGame">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.darwindev.mazegame.MazeGame" target="com.darwindev.mazegame.Maze">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.darwindev.mazegame.SecretPassageWall" target="com.darwindev.mazegame.Wall">
+                  <point x="0.0" y="-15.0" />
+                  <point x="1389.6607142857142" y="159.0" />
+                  <point x="1316.25" y="159.0" />
+                  <point x="20.0" y="15.0" />
+                </edge>
+                <edge source="com.darwindev.mazegame.BombedMazeGame" target="com.darwindev.mazegame.MazeGame">
+                  <point x="28.625" y="-48.0" />
+                  <point x="629.75" y="359.0" />
+                  <point x="973.75" y="359.0" />
+                  <point x="-61.0" y="70.0" />
+                </edge>
+                <edge source="com.darwindev.mazegame.DoorWithSpell" target="com.darwindev.mazegame.Door">
+                  <point x="0.0" y="-26.0" />
+                  <point x="339.5" y="159.0" />
+                  <point x="271.25" y="159.0" />
+                  <point x="0.0" y="37.0" />
+                </edge>
+                <edge source="com.darwindev.mazegame.MazeGame" target="com.darwindev.mazegame.Wall">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.darwindev.mazegame.MazeGameFactory" target="com.darwindev.mazegame.EnchantedMazeGame">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.darwindev.mazegame.BombedMazeGame" target="com.darwindev.mazegame.RoomWithABomb">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.darwindev.mazegame.EnchantedMazeGame" target="com.darwindev.mazegame.SecretPassageWall">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.7068733153638814" x="732.0" y="396.0" />
+              <SelectedNodes>
+                <node>com.darwindev.mazegame.BombedMazeGame</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+                <Category>Properties</Category>
+                <Category>Inner Classes</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -37,6 +166,13 @@
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/darwindev/mazegame/Side.java" />
+      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -75,8 +211,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -115,7 +252,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -123,6 +259,8 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v4.2.4/bin/node" />
   </component>
   <component name="RunManager" selected="Application.MazeGameFactory">
     <configuration default="false" name="MazeGameFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -372,6 +510,7 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
@@ -512,6 +651,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -547,41 +692,42 @@
       <option name="presentableId" value="Default" />
       <updated>1488912768644</updated>
       <workItem from="1488912769834" duration="16000" />
+      <workItem from="1488912950511" duration="70000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16000" />
+    <option name="totallyTimeSpent" value="86000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -606,9 +752,234 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/darwindev/mazegame/MazeGameFactory.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/darwindev/mazegame/MazeGameFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/darwindev/mazegame/BombedWall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/darwindev/mazegame/Door.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/darwindev/mazegame/DoorWithSpell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/darwindev/mazegame/EnchantedRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/darwindev/mazegame/IronDoor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/darwindev/mazegame/Maze.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/darwindev/mazegame/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/darwindev/mazegame/RoomWithABomb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/darwindev/mazegame/SecretPassageWall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/darwindev/mazegame/Side.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.darwindev.mazegame">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.darwindev.mazegame</OriginalElement>
+          <nodes>
+            <node x="833.75" y="409.0">com.darwindev.mazegame.EnchantedMazeGame</node>
+            <node x="222.0" y="223.0">com.darwindev.mazegame.DoorWithSpell</node>
+            <node x="709.75" y="555.0">com.darwindev.mazegame.MazeGameFactory</node>
+            <node x="212.75" y="22.5">com.darwindev.mazegame.Door</node>
+            <node x="1315.6607142857142" y="234.0">com.darwindev.mazegame.SecretPassageWall</node>
+            <node x="0.0" y="674.0">com.darwindev.mazegame.Side</node>
+            <node x="912.75" y="179.0">com.darwindev.mazegame.MazeGame</node>
+            <node x="630.7499999999999" y="0.0">com.darwindev.mazegame.Room</node>
+            <node x="1176.75" y="234.0">com.darwindev.mazegame.BombedWall</node>
+            <node x="0.0" y="223.0">com.darwindev.mazegame.IronDoor</node>
+            <node x="971.25" y="33.5">com.darwindev.mazegame.Maze</node>
+            <node x="486.62499999999994" y="409.0">com.darwindev.mazegame.BombedMazeGame</node>
+            <node x="708.75" y="223.0">com.darwindev.mazegame.EnchantedRoom</node>
+            <node x="1266.25" y="44.5">com.darwindev.mazegame.Wall</node>
+            <node x="476.99999999999994" y="223.0">com.darwindev.mazegame.RoomWithABomb</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.darwindev.mazegame.EnchantedMazeGame" target="com.darwindev.mazegame.DoorWithSpell">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.darwindev.mazegame.BombedMazeGame" target="com.darwindev.mazegame.IronDoor">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.darwindev.mazegame.BombedWall" target="com.darwindev.mazegame.Wall">
+              <point x="0.0" y="-15.0" />
+              <point x="1231.75" y="159.0" />
+              <point x="1296.25" y="159.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.darwindev.mazegame.MazeGame" target="com.darwindev.mazegame.Door">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.darwindev.mazegame.EnchantedMazeGame" target="com.darwindev.mazegame.MazeGame">
+              <point x="28.625" y="-48.0" />
+              <point x="976.875" y="369.0" />
+              <point x="1095.75" y="369.0" />
+              <point x="61.0" y="70.0" />
+            </edge>
+            <edge source="com.darwindev.mazegame.IronDoor" target="com.darwindev.mazegame.Door">
+              <point x="0.0" y="-26.0" />
+              <point x="101.0" y="159.0" />
+              <point x="232.25" y="159.0" />
+              <point x="-39.0" y="37.0" />
+            </edge>
+            <edge source="com.darwindev.mazegame.MazeGame" target="com.darwindev.mazegame.Room">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.darwindev.mazegame.EnchantedRoom" target="com.darwindev.mazegame.Room">
+              <point x="0.0" y="-26.0" />
+              <point x="800.75" y="159.0" />
+              <point x="711.7499999999999" y="159.0" />
+              <point x="0.0" y="59.5" />
+            </edge>
+            <edge source="com.darwindev.mazegame.BombedMazeGame" target="com.darwindev.mazegame.BombedWall">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.darwindev.mazegame.RoomWithABomb" target="com.darwindev.mazegame.Room">
+              <point x="0.0" y="-26.0" />
+              <point x="572.5" y="159.0" />
+              <point x="657.7499999999999" y="159.0" />
+              <point x="-54.0" y="59.5" />
+            </edge>
+            <edge source="com.darwindev.mazegame.EnchantedMazeGame" target="com.darwindev.mazegame.EnchantedRoom">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.darwindev.mazegame.MazeGameFactory" target="com.darwindev.mazegame.BombedMazeGame">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.darwindev.mazegame.MazeGame" target="com.darwindev.mazegame.Maze">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.darwindev.mazegame.SecretPassageWall" target="com.darwindev.mazegame.Wall">
+              <point x="0.0" y="-15.0" />
+              <point x="1389.6607142857142" y="159.0" />
+              <point x="1316.25" y="159.0" />
+              <point x="20.0" y="15.0" />
+            </edge>
+            <edge source="com.darwindev.mazegame.BombedMazeGame" target="com.darwindev.mazegame.MazeGame">
+              <point x="28.625" y="-48.0" />
+              <point x="629.75" y="359.0" />
+              <point x="973.75" y="359.0" />
+              <point x="-61.0" y="70.0" />
+            </edge>
+            <edge source="com.darwindev.mazegame.DoorWithSpell" target="com.darwindev.mazegame.Door">
+              <point x="0.0" y="-26.0" />
+              <point x="339.5" y="159.0" />
+              <point x="271.25" y="159.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="com.darwindev.mazegame.MazeGame" target="com.darwindev.mazegame.Wall">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.darwindev.mazegame.MazeGameFactory" target="com.darwindev.mazegame.EnchantedMazeGame">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.darwindev.mazegame.BombedMazeGame" target="com.darwindev.mazegame.RoomWithABomb">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.darwindev.mazegame.EnchantedMazeGame" target="com.darwindev.mazegame.SecretPassageWall">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7068733153638814" x="732.0" y="396.0" />
+          <SelectedNodes>
+            <node>com.darwindev.mazegame.BombedMazeGame</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>

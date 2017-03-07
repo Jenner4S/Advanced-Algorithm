@@ -1,7 +1,5 @@
 package com.darwindev.mazegame;
 
-import com.darwindev.mazegame.elements.*;
-
 /**
  * Created by Zheng on 01/03/2017.
  *
