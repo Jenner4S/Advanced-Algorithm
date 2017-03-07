@@ -21,7 +21,7 @@ import java.lang.management.ThreadMXBean;
 public class TimeMeasurementApplication extends ApplicationFrame {
     private String algorithmType;
 
-    private XYSeries[] getTimeSeries() {
+    private XYSeries[] getTimeSeries() throws Exception {
         ThreadMXBean bean = ManagementFactory.getThreadMXBean();
         XYSeries[] res = new XYSeries[]{
                 new XYSeries("UserTime"),
@@ -68,11 +68,7 @@ public class TimeMeasurementApplication extends ApplicationFrame {
                 algoInstance = new BinarySearch();
                 break;
             default:
-                begin = 0;
-                end = 1;
-                step = 1;
-                algoInstance = new FindMinimum();
-                break;
+                throw new Exception(algorithmType + " is not a valid algorithm type.");
         }
 
         for (int i = begin; i <= end; i += step) {
@@ -94,7 +90,7 @@ public class TimeMeasurementApplication extends ApplicationFrame {
         return res;
     }
 
-    private XYDataset createDataset( ) {
+    private XYDataset createDataset( ) throws Exception {
 //        warmUp();
         final XYSeriesCollection dataset = new XYSeriesCollection();
         XYSeries[] series = getTimeSeries();
@@ -104,7 +100,7 @@ public class TimeMeasurementApplication extends ApplicationFrame {
         return dataset;
     }
 
-    public TimeMeasurementApplication(String applicationTitle, String sortAlgo) {
+    public TimeMeasurementApplication(String applicationTitle, String sortAlgo) throws Exception {
         super(applicationTitle);
         algorithmType = sortAlgo;
         JFreeChart xylineChart = ChartFactory.createScatterPlot(

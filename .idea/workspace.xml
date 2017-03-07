@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05054ad6-4612-40da-a765-808a9a7309e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Target3/src/com/darwindev/TimeMeasurementTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Target3/src/com/darwindev/algo/Algo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Target3/src/com/darwindev/algo/AlgoSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Target3/src/com/darwindev/algo/BinarySearch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Target3/src/com/darwindev/algo/BubbleSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Target3/src/com/darwindev/algo/FindMinimum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Target3/src/com/darwindev/algo/MergeSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Target3/src/com/darwindev/algo/QuickSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Target3/src/com/darwindev/algo/SelectionSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Target3/src/com/darwindev/algo/Swap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Target3/src/com/darwindev/apps/ApplicationFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Target3/src/com/darwindev/apps/TimeComparationApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Target3/src/com/darwindev/apps/TimeMeasurementApplication.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Target3/out/com/darwindev/Targets.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Target3/src/com/darwindev/TimeMeasurementTargets.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Target3/src/com/darwindev/TimeMeasurementTests.java" afterPath="$PROJECT_DIR$/Target3/src/com/darwindev/TimeMeasurementTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Target3/src/com/darwindev/apps/ApplicationFactory.java" afterPath="$PROJECT_DIR$/Target3/src/com/darwindev/apps/ApplicationFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Target3/src/com/darwindev/apps/TimeMeasurementApplication.java" afterPath="$PROJECT_DIR$/Target3/src/com/darwindev/apps/TimeMeasurementApplication.java" />
     </list>
     <ignored path="TP1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,11 +27,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TimeComparationApplication.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TimeMeasurementTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Target3/src/com/darwindev/TimeMeasurementTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimeComparationApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Target3/src/com/darwindev/apps/TimeComparationApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-740">
-              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+            <state relative-caret-position="625">
+              <caret line="99" column="35" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimeMeasurementApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Target3/src/com/darwindev/apps/TimeMeasurementApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="97" column="37" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,9 +101,10 @@
         <option value="$PROJECT_DIR$/Target3/src/com/darwindev/TimeMeasurementTargets.java" />
         <option value="$PROJECT_DIR$/Target3/src/com/darwindev/TimeMeasurementApplication.java" />
         <option value="$PROJECT_DIR$/Target3/src/com/darwindev/TimeComparationApplication.java" />
-        <option value="$PROJECT_DIR$/Target3/src/com/darwindev/TimeMeasurementTests.java" />
         <option value="$PROJECT_DIR$/Target3/src/com/darwindev/ApplicationFactory.java" />
         <option value="$PROJECT_DIR$/Target3/src/com/darwindev/apps/ApplicationFactory.java" />
+        <option value="$PROJECT_DIR$/Target3/src/com/darwindev/apps/TimeMeasurementApplication.java" />
+        <option value="$PROJECT_DIR$/Target3/src/com/darwindev/TimeMeasurementTests.java" />
       </list>
     </option>
   </component>
@@ -722,12 +735,20 @@
       <workItem from="1488358903427" duration="15000" />
       <workItem from="1488812579980" duration="242000" />
       <workItem from="1488833563160" duration="2000" />
-      <workItem from="1488891966704" duration="5868000" />
+      <workItem from="1488891966704" duration="6308000" />
     </task>
+    <task id="LOCAL-00001" summary="TP02">
+      <created>1488898709884</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1488898709884</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29474000" />
+    <option name="totallyTimeSpent" value="29914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -771,6 +792,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="TP02" />
+    <option name="LAST_COMMIT_MESSAGE" value="TP02" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="2" />
@@ -788,8 +813,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -800,27 +823,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Target3/src/com/darwindev/RandomData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Target3/src/com/darwindev/TimeMeasurementTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -838,8 +840,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -857,8 +857,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -876,8 +874,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -895,8 +891,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -914,8 +908,23 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Target3/src/com/darwindev/RandomData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Target3/src/com/darwindev/TimeMeasurementTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -933,8 +942,6 @@
           <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1063,40 +1070,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Target3/src/com/darwindev/apps/TimeMeasurementApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Target3/src/com/darwindev/apps/ApplicationFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="240">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Target3/src/com/darwindev/TimeMeasurementTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Target3/src/com/darwindev/apps/TimeComparationApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-740">
-          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        <state relative-caret-position="625">
+          <caret line="99" column="35" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Target3/src/com/darwindev/apps/TimeMeasurementApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="97" column="37" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Target3/src/com/darwindev/TimeMeasurementTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

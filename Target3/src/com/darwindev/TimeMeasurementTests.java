@@ -9,7 +9,7 @@ import org.jfree.ui.RefineryUtilities;
  * Created by Zheng on 08/02/2017.
  */
 public class TimeMeasurementTests {
-    public static void draw(String applicationTitle, String type) {
+    public static void draw(String applicationTitle, String type) throws Exception {
         String[] applicationArgs = {
                 type
         };
@@ -18,7 +18,7 @@ public class TimeMeasurementTests {
         RefineryUtilities.centerFrameOnScreen(chart);
         chart.setVisible(true);
     }
-    public static void main(String args[]) {
+    public static void main(String args[]) throws Exception {
         draw("TimeMeasurement", "FindMinimum");
     }
 }
