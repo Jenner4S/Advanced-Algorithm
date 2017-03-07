@@ -14,8 +14,6 @@ import org.jfree.ui.ApplicationFrame;
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadMXBean;
 
-import static com.darwindev.algo.AlgoName.*;
-
 /**
  * Application - Time measurement
  * Created by Zheng on 07/03/2017.
@@ -23,7 +21,7 @@ import static com.darwindev.algo.AlgoName.*;
 public class TimeMeasurementApplication extends ApplicationFrame {
     private AlgoName algorithmType;
 
-    private XYSeries[] getTimeSeries() throws Exception {
+    private XYSeries[] getTimeSeries(Boolean warmUp) throws Exception {
         ThreadMXBean bean = ManagementFactory.getThreadMXBean();
         XYSeries[] res = new XYSeries[]{
                 new XYSeries("UserTime"),
@@ -31,44 +29,12 @@ public class TimeMeasurementApplication extends ApplicationFrame {
         };
 
         Algo algoInstance = AlgoFactory.generateAlgo(algorithmType);
-        int begin, end, step;
-        switch (algorithmType) {
-            case AlgoFindMinimum:
-                begin = 500000;
-                end = 10000000;
-                step = 100000;
-                break;
-            case AlgoSelectionSort:
-                begin = 5000;
-                end = 100000;
-                step = 1000;
-                break;
-            case AlgoBubbleSort:
-                begin = 500;
-                end = 10000;
-                step = 100;
-                break;
-            case AlgoMergeSort:
-                begin = 50000;
-                end = 1000000;
-                step = 10000;
-                break;
-            case AlgoQuickSort:
-                begin = 50000;
-                end = 1000000;
-                step = 10000;
-                break;
-            case AlgoBinarySearch:
-                begin = 5000000;
-                end = 100000000;
-                step = 1000000;
-                break;
-            default:
-                throw new Exception("Invalid algorithm type.");
+        int begin = algoInstance.rangeBegin(), end = algoInstance.rangeEnd(), step = algoInstance.rangeStep();
+        if (warmUp) {
+            begin /= 10; end /= 10; step /= 10;
         }
-
         for (int i = begin; i <= end; i += step) {
-            int[] data = RandomData.generate1d(i, 0, 10000000);
+            int[] data = RandomData.generate1d(i, 0, Integer.MAX_VALUE);
 
             long beginWallClockTime = System.nanoTime();
             long beginCpuTime = bean.getCurrentThreadCpuTime();
@@ -86,10 +52,14 @@ public class TimeMeasurementApplication extends ApplicationFrame {
         return res;
     }
 
+    private void warmUp() throws Exception {
+        getTimeSeries(true);
+    }
+
     private XYDataset createDataset( ) throws Exception {
-//        warmUp();
+        warmUp();
         final XYSeriesCollection dataset = new XYSeriesCollection();
-        XYSeries[] series = getTimeSeries();
+        XYSeries[] series = getTimeSeries(false);
         for (XYSeries serie : series) {
             dataset.addSeries(serie);
         }

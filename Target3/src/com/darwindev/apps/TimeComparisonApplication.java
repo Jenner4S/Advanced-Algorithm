@@ -23,16 +23,19 @@ import java.util.ArrayList;
 public class TimeComparisonApplication extends ApplicationFrame {
     private AlgoName[] algorithmTypes;
 
-    private ArrayList<XYSeries> getTimeSeries() {
+    private ArrayList<XYSeries> getTimeSeries(Boolean warmUp) {
         ThreadMXBean bean = ManagementFactory.getThreadMXBean();
         ArrayList<XYSeries> res = new ArrayList<>();
         for (AlgoName algorithmType: algorithmTypes) {
             XYSeries series = new XYSeries(algorithmType);
 
             Algo algoInstance = AlgoFactory.generateAlgo(algorithmType);
-
-            for (int i = 500; i <= 10000; i += 100) {
-                int[] data = RandomData.generate1d(i, 0, 10000000);
+            int begin = 500, end = 10000, step = 100;
+            if (warmUp) {
+                begin /= 10; end /= 10; step /= 10;
+            }
+            for (int i = begin; i <= end; i += step) {
+                int[] data = RandomData.generate1d(i, 0, Integer.MAX_VALUE);
                 long beginCpuTime = bean.getCurrentThreadCpuTime();
 
                 algoInstance.perform(data);
@@ -47,17 +50,21 @@ public class TimeComparisonApplication extends ApplicationFrame {
         return res;
     }
 
-    private XYDataset createDataset( ) {
-//        warmUp();
+    private void warmUp() throws Exception {
+        getTimeSeries(true);
+    }
+
+    private XYDataset createDataset( ) throws Exception {
+        warmUp();
         final XYSeriesCollection dataset = new XYSeriesCollection();
-        ArrayList<XYSeries> series = getTimeSeries();
+        ArrayList<XYSeries> series = getTimeSeries(false);
         for (XYSeries serie : series) {
             dataset.addSeries(serie);
         }
         return dataset;
     }
 
-    public TimeComparisonApplication(String applicationTitle, AlgoName chartTitle) {
+    public TimeComparisonApplication(String applicationTitle, AlgoName chartTitle) throws Exception {
         super(applicationTitle);
         algorithmTypes = new AlgoName[] {
                 AlgoSelectionSort,
