@@ -1,6 +1,10 @@
 package com.darwindev;
 
+import com.darwindev.algo.*;
+import static com.darwindev.apps.ApplicationType.*;
+import static com.darwindev.algo.AlgoName.*;
 import com.darwindev.apps.ApplicationFactory;
+import com.darwindev.apps.ApplicationType;
 import org.jfree.ui.ApplicationFrame;
 import org.jfree.ui.RefineryUtilities;
 
@@ -9,8 +13,9 @@ import org.jfree.ui.RefineryUtilities;
  * Created by Zheng on 08/02/2017.
  */
 public class TimeMeasurementTests {
-    public static void draw(String applicationTitle, String type) throws Exception {
-        String[] applicationArgs = {
+
+    public static void testDraw(ApplicationType applicationTitle, AlgoName type) throws Exception {
+        AlgoName[] applicationArgs = {
                 type
         };
         ApplicationFrame chart = ApplicationFactory.generateApplication(applicationTitle, applicationArgs);
@@ -18,7 +23,15 @@ public class TimeMeasurementTests {
         RefineryUtilities.centerFrameOnScreen(chart);
         chart.setVisible(true);
     }
+
     public static void main(String args[]) throws Exception {
-        draw("TimeMeasurement", "FindMinimum");
+        testDraw(TimeMeasurement, AlgoFindMinimum);
+        testDraw(TimeMeasurement, AlgoSelectionSort);
+        testDraw(TimeMeasurement, AlgoBubbleSort);
+        testDraw(TimeMeasurement, AlgoMergeSort);
+        testDraw(TimeMeasurement, AlgoQuickSort);
+        testDraw(TimeMeasurement, AlgoBinarySearch);
+        testDraw(TimeComparison, AlgoAllSort);
     }
+
 }

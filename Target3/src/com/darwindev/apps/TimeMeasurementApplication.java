@@ -14,12 +14,14 @@ import org.jfree.ui.ApplicationFrame;
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadMXBean;
 
+import static com.darwindev.algo.AlgoName.*;
+
 /**
  * Application - Time measurement
  * Created by Zheng on 07/03/2017.
  */
 public class TimeMeasurementApplication extends ApplicationFrame {
-    private String algorithmType;
+    private AlgoName algorithmType;
 
     private XYSeries[] getTimeSeries() throws Exception {
         ThreadMXBean bean = ManagementFactory.getThreadMXBean();
@@ -28,47 +30,41 @@ public class TimeMeasurementApplication extends ApplicationFrame {
                 new XYSeries("WallTime")
         };
 
-        Algo algoInstance;
+        Algo algoInstance = AlgoFactory.generateAlgo(algorithmType);
         int begin, end, step;
         switch (algorithmType) {
-            case "FindMinimum":
+            case AlgoFindMinimum:
                 begin = 500000;
                 end = 10000000;
                 step = 100000;
-                algoInstance = new FindMinimum();
                 break;
-            case "SelectionSort":
+            case AlgoSelectionSort:
                 begin = 5000;
                 end = 100000;
                 step = 1000;
-                algoInstance = new SelectionSort();
                 break;
-            case "BubbleSort":
+            case AlgoBubbleSort:
                 begin = 500;
                 end = 10000;
                 step = 100;
-                algoInstance = new BubbleSort();
                 break;
-            case "MergeSort":
+            case AlgoMergeSort:
                 begin = 50000;
                 end = 1000000;
                 step = 10000;
-                algoInstance = new MergeSort();
                 break;
-            case "QuickSort":
+            case AlgoQuickSort:
                 begin = 50000;
                 end = 1000000;
                 step = 10000;
-                algoInstance = new QuickSort();
                 break;
-            case "BinarySearch":
+            case AlgoBinarySearch:
                 begin = 5000000;
                 end = 100000000;
                 step = 1000000;
-                algoInstance = new BinarySearch();
                 break;
             default:
-                throw new Exception(algorithmType + " is not a valid algorithm type.");
+                throw new Exception("Invalid algorithm type.");
         }
 
         for (int i = begin; i <= end; i += step) {
@@ -100,7 +96,7 @@ public class TimeMeasurementApplication extends ApplicationFrame {
         return dataset;
     }
 
-    public TimeMeasurementApplication(String applicationTitle, String sortAlgo) throws Exception {
+    public TimeMeasurementApplication(String applicationTitle, AlgoName sortAlgo) throws Exception {
         super(applicationTitle);
         algorithmType = sortAlgo;
         JFreeChart xylineChart = ChartFactory.createScatterPlot(

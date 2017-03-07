@@ -28,6 +28,22 @@ public class BinarySearch implements Algo {
         return lowerBound(inputData, val);
     }
 
+    @Override
+    public int rangeBegin() {
+        return 5000000;
+    }
+
+    @Override
+    public int rangeEnd() {
+        return 100000000;
+    }
+
+    @Override
+    public int rangeStep() {
+        return 1000000;
+    }
+
+    @Override
     public void perform(int[] tab) {
         int val = RandomData.generate1d(1, 0, tab.length - 1)[0];
         binarySearch(tab, val);

@@ -21,10 +21,27 @@ public class BubbleSort implements AlgoSort {
         } while (hadToSwap);
     }
 
+    @Override
     public void sort(int[] tab) {
         BubbleSort.bubbleSort(tab);
     }
 
+    @Override
+    public int rangeBegin() {
+        return 500;
+    }
+
+    @Override
+    public int rangeEnd() {
+        return 10000;
+    }
+
+    @Override
+    public int rangeStep() {
+        return 100;
+    }
+
+    @Override
     public void perform(int[] tab) {
         sort(tab);
     }

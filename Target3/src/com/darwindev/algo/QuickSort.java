@@ -37,10 +37,27 @@ public class QuickSort implements AlgoSort {
         quickSort(inputData, m + 1, end); // +1 for convergence
     }
 
+    @Override
     public void sort(int[] tab) {
         QuickSort.quickSort(tab);
     }
 
+    @Override
+    public int rangeBegin() {
+        return 50000;
+    }
+
+    @Override
+    public int rangeEnd() {
+        return 1000000;
+    }
+
+    @Override
+    public int rangeStep() {
+        return 10000;
+    }
+
+    @Override
     public void perform(int[] tab) {
         sort(tab);
     }

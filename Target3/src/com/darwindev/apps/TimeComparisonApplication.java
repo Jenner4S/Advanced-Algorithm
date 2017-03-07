@@ -2,6 +2,7 @@ package com.darwindev.apps;
 
 import com.darwindev.RandomData;
 import com.darwindev.algo.*;
+import static com.darwindev.algo.AlgoName.*;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -19,39 +20,16 @@ import java.util.ArrayList;
  * Application - Time comparation
  * Created by Zheng on 07/03/2017.
  */
-public class TimeComparationApplication extends ApplicationFrame {
-    private String[] algorithmTypes;
+public class TimeComparisonApplication extends ApplicationFrame {
+    private AlgoName[] algorithmTypes;
 
     private ArrayList<XYSeries> getTimeSeries() {
         ThreadMXBean bean = ManagementFactory.getThreadMXBean();
         ArrayList<XYSeries> res = new ArrayList<>();
-        for (String algorithmType: algorithmTypes) {
+        for (AlgoName algorithmType: algorithmTypes) {
             XYSeries series = new XYSeries(algorithmType);
 
-            Algo algoInstance;
-            switch (algorithmType) {
-                case "FindMinimum":
-                    algoInstance = new FindMinimum();
-                    break;
-                case "SelectionSort":
-                    algoInstance = new SelectionSort();
-                    break;
-                case "BubbleSort":
-                    algoInstance = new BubbleSort();
-                    break;
-                case "MergeSort":
-                    algoInstance = new MergeSort();
-                    break;
-                case "QuickSort":
-                    algoInstance = new QuickSort();
-                    break;
-                case "BinarySearch":
-                    algoInstance = new BinarySearch();
-                    break;
-                default:
-                    algoInstance = new FindMinimum();
-                    break;
-            }
+            Algo algoInstance = AlgoFactory.generateAlgo(algorithmType);
 
             for (int i = 500; i <= 10000; i += 100) {
                 int[] data = RandomData.generate1d(i, 0, 10000000);
@@ -79,13 +57,13 @@ public class TimeComparationApplication extends ApplicationFrame {
         return dataset;
     }
 
-    public TimeComparationApplication(String applicationTitle, String chartTitle) {
+    public TimeComparisonApplication(String applicationTitle, AlgoName chartTitle) {
         super(applicationTitle);
-        algorithmTypes = new String[] {
-                "SelectionSort",
-                "BubbleSort",
-                "MergeSort",
-                "QuickSort"
+        algorithmTypes = new AlgoName[] {
+                AlgoSelectionSort,
+                AlgoBubbleSort,
+                AlgoMergeSort,
+                AlgoQuickSort
         };
         JFreeChart xylineChart = ChartFactory.createScatterPlot(
                 "Comparation of " + chartTitle,

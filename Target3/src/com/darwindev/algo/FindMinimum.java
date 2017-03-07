@@ -7,6 +7,21 @@ package com.darwindev.algo;
  */
 public class FindMinimum implements Algo {
 
+    @Override
+    public int rangeBegin() {
+        return 500000;
+    }
+
+    @Override
+    public int rangeEnd() {
+        return 10000000;
+    }
+
+    @Override
+    public int rangeStep() {
+        return 100000;
+    }
+
     public static int findMinimumValue(int[] inputData) {
         return findMinimumValue(inputData, 0, inputData.length);
     }
@@ -33,6 +48,7 @@ public class FindMinimum implements Algo {
         return res;
     }
 
+    @Override
     public void perform(int[] tab) {
         findMinimumValue(tab);
     }

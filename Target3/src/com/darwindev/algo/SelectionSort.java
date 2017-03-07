@@ -14,10 +14,27 @@ public class SelectionSort implements AlgoSort {
         }
     }
 
+    @Override
     public void sort(int[] tab) {
         SelectionSort.selectionSort(tab);
     }
 
+    @Override
+    public int rangeBegin() {
+        return 5000;
+    }
+
+    @Override
+    public int rangeEnd() {
+        return 100000;
+    }
+
+    @Override
+    public int rangeStep() {
+        return 1000;
+    }
+
+    @Override
     public void perform(int[] tab) {
         sort(tab);
     }

@@ -33,10 +33,27 @@ public class MergeSort implements AlgoSort {
         mergeSorted(inputData, begin, middle, end);
     }
 
+    @Override
     public void sort(int[] tab) {
         MergeSort.mergeSort(tab);
     }
 
+    @Override
+    public int rangeBegin() {
+        return 50000;
+    }
+
+    @Override
+    public int rangeEnd() {
+        return 1000000;
+    }
+
+    @Override
+    public int rangeStep() {
+        return 10000;
+    }
+
+    @Override
     public void perform(int[] tab) {
         sort(tab);
     }
