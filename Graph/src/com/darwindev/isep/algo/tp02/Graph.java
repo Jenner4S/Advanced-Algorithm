@@ -4,10 +4,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Created by Zheng on 23/03/2017.
@@ -15,15 +12,15 @@ import java.util.Scanner;
  */
 
 public class Graph {
-    private class Edge {
+    public static class Edge {
         int ivex;
         Edge nextEdge;
     }
-    private class Node {
+    public static class Node {
         String id;
         Edge firstEdge;
     };
-    private Node[] adj;
+    public Node[] adj;
 
     public Graph(int capacity) {
         adj = new Node[capacity];
@@ -37,7 +34,14 @@ public class Graph {
     public Graph(String filePath) throws IOException {
         List<String> lines = Files.readAllLines(Paths.get(filePath),
                 StandardCharsets.UTF_8);
-        addNodesToGraph(lines);
+        HashSet<String> set = new HashSet<String>();
+        for (String line : lines) {
+            String[] nodesId = line.split(" ");
+            set.add(nodesId[0]);
+            set.add(nodesId[1]);
+        }
+        List<String> nodeIds = new ArrayList<String>(set);
+        addNodesToGraph(nodeIds);
         addEdgesToGraph(lines);
     }
 
@@ -62,33 +66,27 @@ public class Graph {
         }
     }
 
-    private int addNodesToGraph(List<String> lines) {
-        HashSet<String> set = new HashSet<String>();
-        for (String line : lines) {
-            String[] nodesId = line.split(" ");
-            set.add(nodesId[0]);
-            set.add(nodesId[1]);
-        }
-        adj = new Node[set.size()];
+    public int addNodesToGraph(List<String> nodeIds) {
+        adj = new Node[nodeIds.size()];
         int i = 0;
-        for (String nodeId : set) {
+        for (String nodeId : nodeIds) {
             Node node1 = new Node();
             node1.id = nodeId;
             node1.firstEdge = null;
             adj[i] = node1;
             i++;
         }
-        return set.size();
+        return nodeIds.size();
     }
 
-    private void addEdgesToGraph(List<String> lines) {
+    public void addEdgesToGraph(List<String> lines) {
         for (String line : lines) {
             String[] nodesId = line.split(" ");
             addEdgeBetweenNode(nodesId[0], nodesId[1]);
         }
     }
 
-    private void addEdgeBetweenNode(String node1Id, String node2Id) {
+    public void addEdgeBetweenNode(String node1Id, String node2Id) {
         int node1Pos = getNodePosition(node1Id);
         int node2Pos = getNodePosition(node2Id);
         Edge edge1 = new Edge();
