@@ -1,4 +1,4 @@
-package com.darwindev.isep.algo.tp02;
+package com.darwindev.isep.algo.tp03;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -11,7 +11,7 @@ import java.util.*;
  *
  */
 
-public class Graph {
+public class UndirectedGraph {
     public static class Edge {
         int ivex;
         Edge nextEdge;
@@ -22,7 +22,7 @@ public class Graph {
     };
     public Node[] adj;
 
-    public Graph(int capacity) {
+    public UndirectedGraph(int capacity) {
         adj = new Node[capacity];
         for (int i = 0; i < capacity; i++) {
             adj[i] = new Node();
@@ -31,7 +31,7 @@ public class Graph {
         }
     }
 
-    public Graph(String filePath) throws IOException {
+    public UndirectedGraph(String filePath) throws IOException {
         List<String> lines = Files.readAllLines(Paths.get(filePath),
                 StandardCharsets.UTF_8);
         HashSet<String> set = new HashSet<String>();
@@ -45,7 +45,7 @@ public class Graph {
         addEdgesToGraph(lines);
     }
 
-    public Graph() throws IOException {
+    public UndirectedGraph() throws IOException {
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("Enter the number of vertices: ");
         int num_nodes = scanner1.nextInt();

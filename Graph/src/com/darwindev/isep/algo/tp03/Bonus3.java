@@ -1,4 +1,4 @@
-package com.darwindev.isep.algo.tp02;
+package com.darwindev.isep.algo.tp03;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -6,10 +6,9 @@ import org.json.simple.parser.JSONParser;
 
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.Writer;
 import java.util.*;
 
-public class Main {
+public class Bonus3 {
     public static void main(String[] args) throws Exception {
         FileReader jsonFile = new FileReader("reseau.json");
         JSONParser parser = new JSONParser();
@@ -30,7 +29,7 @@ public class Main {
         }
 
         ArrayList<String> stationNames = new ArrayList<>(stationNameSet);
-        Graph graph = new Graph(stationNames.size());
+        UndirectedGraph graph = new UndirectedGraph(stationNames.size());
         for (int i = 0; i < stationNames.size(); i++) {
             graph.adj[i].id = stationNames.get(i);
         }
@@ -53,10 +52,10 @@ public class Main {
 
         graph.print();
 
-        // Generate Graph JSON
+        // Generate UndirectedGraph JSON
         HashMap out = new HashMap();
         ArrayList<HashMap> outNodeArr = new ArrayList<>(graph.adj.length);
-        for (Graph.Node node1: graph.adj) {
+        for (UndirectedGraph.Node node1: graph.adj) {
             HashMap newDict = new HashMap();
             newDict.put("id", node1.id);
             newDict.put("group", 0);
@@ -65,8 +64,8 @@ public class Main {
         out.put("nodes", outNodeArr);
 
         ArrayList<HashMap> outLinkArr = new ArrayList<>();
-        for (Graph.Node node1: graph.adj) {
-            Graph.Edge edge1 = node1.firstEdge;
+        for (UndirectedGraph.Node node1: graph.adj) {
+            UndirectedGraph.Edge edge1 = node1.firstEdge;
             while (edge1 != null) {
                 HashMap newDict = new HashMap();
                 newDict.put("source", node1.id);

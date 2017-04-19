@@ -1,21 +1,20 @@
-package com.darwindev.isep.algo.tp02;
+package com.darwindev.isep.algo.tp03;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class IntegerGraph {
+public class IntegerUndirectedGraph {
     private int nodeCount;
     private int edgeCount;
     private List<Integer>[] adj;
 
-    public IntegerGraph(String filePath) throws IOException {
+    public IntegerUndirectedGraph(String filePath) throws IOException {
         List<String> lines = Files.readAllLines(Paths.get(filePath),
                 StandardCharsets.UTF_8);
         edgeCount = lines.size();

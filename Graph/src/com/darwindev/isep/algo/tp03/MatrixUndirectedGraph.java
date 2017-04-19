@@ -1,4 +1,4 @@
-package com.darwindev.isep.algo.tp02;
+package com.darwindev.isep.algo.tp03;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -10,12 +10,12 @@ import java.util.List;
  * Created by Zheng on 24/03/2017.
  *
  */
-public class MatrixGraph {
+public class MatrixUndirectedGraph {
     private int N;
     private int M;
     private boolean[][] adj;
 
-    public MatrixGraph(int capacity) {
+    public MatrixUndirectedGraph(int capacity) {
         adj = new boolean[capacity][capacity];
         for (int i = 0; i < capacity; i++) {
             for (int j = 0; j < capacity; j++) {
@@ -24,7 +24,7 @@ public class MatrixGraph {
         }
     }
 
-    public MatrixGraph(String filePath) throws IOException {
+    public MatrixUndirectedGraph(String filePath) throws IOException {
         List<String> lines = Files.readAllLines(Paths.get(filePath),
                 StandardCharsets.UTF_8);
         int capacity = lines.size();
