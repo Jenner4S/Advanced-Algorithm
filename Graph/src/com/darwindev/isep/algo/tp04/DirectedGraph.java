@@ -13,7 +13,9 @@ class DirectedGraph {
     public int V;   // No. of vertices
 
     // Array of lists for Adjacency List Representation
-    public LinkedList<Integer> adj[];
+    // arr[0] -> toNode
+    // arr[1] -> weight
+    public LinkedList<Integer[]> adj[];
 
     // Constructor
     DirectedGraph(int v) {
@@ -49,13 +51,13 @@ class DirectedGraph {
             adj[i] = new LinkedList();
         for (String line : lines) {
             String[] nodesId = line.split(" ");
-            addEdge(Integer.parseInt(nodesId[0]), Integer.parseInt(nodesId[1]));
+            addEdge(Integer.parseInt(nodesId[0]), Integer.parseInt(nodesId[1]), 1);
         }
     }
 
     // Function to add an edge into the graph
-    void addEdge(int v, int w) {
-        adj[v].add(w);  // Add w to v's list.
+    void addEdge(int v, int w, int power) {
+        adj[v].add(new Integer[]{ w, power });  // Add w to v's list.
     }
 
     // Print the whole graph
@@ -63,10 +65,10 @@ class DirectedGraph {
         int v = V;
         for (int i = 1; i <= v; i++) {
             System.out.print(i + ": ");
-            Iterator<Integer> iter = adj[i].listIterator();
+            Iterator<Integer[]> iter = adj[i].listIterator();
             while (iter.hasNext()) {
-                int n = iter.next();
-                System.out.print(n + ", ");
+                Integer[] n = iter.next();
+                System.out.print("(" + Integer.toString(n[0]) + ", " + Integer.toString(n[1]) + ")");
             }
             System.out.println();
         }
