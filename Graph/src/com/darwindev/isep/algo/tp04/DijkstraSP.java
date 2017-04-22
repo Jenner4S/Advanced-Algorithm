@@ -2,10 +2,6 @@ package com.darwindev.isep.algo.tp04;
 
 import java.util.*;
 
-/**
- * Created by Zheng on 21/04/2017.
- *
- */
 public class DijkstraSP {
 
     private int sourceNode;

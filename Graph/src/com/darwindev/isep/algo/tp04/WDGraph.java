@@ -1,7 +1,6 @@
 package com.darwindev.isep.algo.tp04;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -56,7 +55,7 @@ class WDGraph {
                 StandardCharsets.UTF_8);
         HashSet<Integer> set = new HashSet<Integer>();
         for (String line : lines) {
-            String[] nodesId = line.split(" ");
+            String[] nodesId = line.trim().split("\\s+");
             if (nodesId.length >= 2) {
                 set.add(Integer.parseInt(nodesId[0]));
                 set.add(Integer.parseInt(nodesId[1]));
@@ -68,13 +67,11 @@ class WDGraph {
         for (int i = 0; i < V; ++i)
             adj[i] = new LinkedList();
         for (String line : lines) {
-            String[] nodesId = line.split(" ");
+            String[] nodesId = line.split("\\s+");
             if (nodesId.length == 2) {
                 addEdge(Integer.parseInt(nodesId[0]), Integer.parseInt(nodesId[1]), 1);
             } else if (nodesId.length == 3) {
                 addEdge(Integer.parseInt(nodesId[0]), Integer.parseInt(nodesId[1]), Double.parseDouble(nodesId[2]));
-            } else {
-                continue;
             }
         }
     }
@@ -88,9 +85,7 @@ class WDGraph {
     void print() {
         for (int i = 0; i < V; i++) {
             System.out.print(i + ": ");
-            Iterator<DirectedEdge> iter = adj[i].listIterator();
-            while (iter.hasNext()) {
-                DirectedEdge n = iter.next();
+            for (DirectedEdge n : adj[i]) {
                 System.out.print("(" + Integer.toString(n.to()) + ", " + Double.toString(n.weight()) + "), ");
             }
             System.out.println();
