@@ -23,7 +23,7 @@ public class IntegerUndirectedGraph {
         addEdgesToGraph(adj, lines);
     }
 
-    public int getNodeCountOfGraphFromFileContent(List<String> lines) {
+    int getNodeCountOfGraphFromFileContent(List<String> lines) {
         Set<String> set = new HashSet<String>();
         for (String line : lines) {
             String[] nodesNumber = line.split(" ");
@@ -44,7 +44,7 @@ public class IntegerUndirectedGraph {
         }
     }
 
-    public void addEdgeToNode(int node1Index, int node2Index) {
+    void addEdgeToNode(int node1Index, int node2Index) {
         List<Integer> edges = adj[node1Index];
         if (edges == null) {
             edges = new ArrayList<Integer>();

@@ -2,7 +2,7 @@ package com.darwindev.isep.algo.tp04;
 
 import java.util.*;
 
-public class BFSShortestPaths {
+class BFSShortestPaths {
 
     private int sourceNode;
     private boolean[] marked;
@@ -10,7 +10,7 @@ public class BFSShortestPaths {
     private int[] distance;
 
     // The function to do BFS traversal.
-    public ArrayList<Integer> bfs(WDGraph G, int s) {
+    ArrayList<Integer> bfs(WDGraph G, int s) {
         sourceNode = s;
         int v = G.V + 1;
         marked = new boolean[v];
@@ -54,15 +54,15 @@ public class BFSShortestPaths {
         return visitOrder;
     }
 
-    public boolean hasPathTo(int v) {
+    boolean hasPathTo(int v) {
         return marked[v];
     }
 
-    public int distTo(int v) {
+    int distTo(int v) {
         return distance[v];
     }
 
-    public void printSP(int v) {
+    void printSP(int v) {
         ArrayList<Integer> shortestPath = new ArrayList<>();
         int thisNode = v;
         while (thisNode > -1) {

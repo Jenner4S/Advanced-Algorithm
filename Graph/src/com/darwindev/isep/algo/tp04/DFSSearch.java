@@ -8,10 +8,10 @@ import java.util.Stack;
  * Created by Zheng on 21/04/2017.
  *
  */
-public class DFSSearch {
+class DFSSearch {
 
     // The function to do DFS traversal.
-    public ArrayList<Integer> dfs(WDGraph G, int startNode) {
+    ArrayList<Integer> dfs(WDGraph G, int startNode) {
         // Mark all the vertices as not visited (set as false by default in java).
         boolean[] visited = new boolean[G.V + 1];
         // Use an array list to record visit orders.

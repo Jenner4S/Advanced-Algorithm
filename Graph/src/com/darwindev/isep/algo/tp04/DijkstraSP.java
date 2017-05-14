@@ -2,7 +2,7 @@ package com.darwindev.isep.algo.tp04;
 
 import java.util.*;
 
-public class DijkstraSP {
+class DijkstraSP {
 
     private int sourceNode;
     private boolean[] marked;
@@ -20,7 +20,7 @@ public class DijkstraSP {
         return true;
     }
 
-    public ArrayList<Integer> DijkstraSP(WDGraph G, int s) {
+    ArrayList<Integer> DijkstraSP(WDGraph G, int s) {
         // To ensure all weights of edges are positive.
         if (!verifyNonNegative(G)) {
             return null;
@@ -75,15 +75,15 @@ public class DijkstraSP {
         return visitOrder;
     }
 
-    public boolean hasPathTo(int v) {
+    boolean hasPathTo(int v) {
         return marked[v];
     }
 
-    public double distTo(int v) {
+    double distTo(int v) {
         return distance[v];
     }
 
-    public void printSP(int v) {
+    void printSP(int v) {
         ArrayList<Integer> shortestPath = new ArrayList<>();
         int thisNode = v;
         while (thisNode > -1) {

@@ -10,7 +10,7 @@ import java.util.*;
 // representation
 class WDGraph {
 
-    public class DirectedEdge {
+    class DirectedEdge {
 
         private final int v;
         private final int w;
@@ -36,17 +36,14 @@ class WDGraph {
 
     }
 
-    public int V;   // No. of vertices
+    int V;   // No. of vertices
 
     // Array of lists for Adjacency List Representation
-    public LinkedList<DirectedEdge> adj[];
+    LinkedList<DirectedEdge> adj[];
 
     // Constructor
-    WDGraph(int v) {
+    public WDGraph(int v) {
         V = v;
-        adj = new LinkedList[v];
-        for (int i = 0; i < v; ++i)
-            adj[i] = new LinkedList();
     }
 
     // Constructor: build graph from file

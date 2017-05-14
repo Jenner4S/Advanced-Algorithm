@@ -12,17 +12,17 @@ import java.util.*;
  */
 
 public class UndirectedGraph {
-    public static class Edge {
+    static class Edge {
         int ivex;
         Edge nextEdge;
     }
-    public static class Node {
+    static class Node {
         String id;
         Edge firstEdge;
     };
-    public Node[] adj;
+    Node[] adj;
 
-    public UndirectedGraph(int capacity) {
+    UndirectedGraph(int capacity) {
         adj = new Node[capacity];
         for (int i = 0; i < capacity; i++) {
             adj[i] = new Node();
@@ -66,7 +66,7 @@ public class UndirectedGraph {
         }
     }
 
-    public int addNodesToGraph(List<String> nodeIds) {
+    private int addNodesToGraph(List<String> nodeIds) {
         adj = new Node[nodeIds.size()];
         int i = 0;
         for (String nodeId : nodeIds) {
@@ -79,14 +79,14 @@ public class UndirectedGraph {
         return nodeIds.size();
     }
 
-    public void addEdgesToGraph(List<String> lines) {
+    private void addEdgesToGraph(List<String> lines) {
         for (String line : lines) {
             String[] nodesId = line.split(" ");
             addEdgeBetweenNode(nodesId[0], nodesId[1]);
         }
     }
 
-    public void addEdgeBetweenNode(String node1Id, String node2Id) {
+    void addEdgeBetweenNode(String node1Id, String node2Id) {
         int node1Pos = getNodePosition(node1Id);
         int node2Pos = getNodePosition(node2Id);
         Edge edge1 = new Edge();
@@ -129,15 +129,15 @@ public class UndirectedGraph {
     }
 
     private Node getNode(String nodeId) {
-        for (int i = 0; i < adj.length; i++) {
-            if (adj[i].id.equals(nodeId)) {
-                return adj[i];
+        for (Node anAdj : adj) {
+            if (anAdj.id.equals(nodeId)) {
+                return anAdj;
             }
         }
         return null;
     }
 
-    public void print() {
+    void print() {
         for (Node node1: adj) {
             System.out.print(node1.id + ": [");
             Edge tEdge = node1.firstEdge;
@@ -157,7 +157,7 @@ public class UndirectedGraph {
         }
     }
 
-    public int degree(Node node1) {
+    private int degree(Node node1) {
         int degree1 = 0;
         Edge tEdge = node1.firstEdge;
         while (tEdge != null) {
@@ -167,11 +167,11 @@ public class UndirectedGraph {
         return degree1;
     }
 
-    public int order() {
+    private int order() {
         return adj.length;
     }
 
-    public int size() {
+    private int size() {
         int total = 0;
         for (Node node1: adj) {
             Edge tEdge = node1.firstEdge;
